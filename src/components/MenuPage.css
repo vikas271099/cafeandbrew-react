@@ -1,93 +1,4 @@
 .menu-page {
-    display: flex;
-    font-family: Arial, sans-serif;
-  }
-  
-  .sidebar {
-    width: 250px;
-    background-color: #3a3a3a;
-    color: white;
-    padding: 20px;
-  }
-  
-  .sidebar h2 {
-    font-size: 2em;
-    margin: 0 0 20px;
-  }
-  
-  .menu-categories {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-categories li {
-    margin: 10px 0;
-    font-size: 1.2em;
-    text-align: left;
-  }
-  
-  .menu-categories .activeMenu{
-    color: #ff6347;
-    cursor: pointer;
-  }
-  .menu-categories li:hover {
-    color: #ff6347;
-    cursor: pointer;
-  }
-  
-  .menu-content {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  
-  .menu-content h2 {
-    font-size: 2em;
-    margin: 0 0 20px;
-  }
-  
-  .menu-items {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .menu-item {
-    flex: 1 1 45%;
-    margin: 10px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-item h3 {
-    margin: 0 0 10px;
-    font-size: 1.5em;
-  }
-  
-  .menu-item p {
-    margin: 0 0 10px;
-  }
-  
-  .calories {
-    color: #888;
-    font-size: 0.9em;
-  }
-  
-
-@media all and (max-width:768px){
-    .menu-page{
-
-    display: block;
-}
-.sidebar{
-  width: calc(100% - 40px);
-}
-}
-
-
-
-   /* .menu-page {
   font-family: Arial, sans-serif;
   color: white;
   background-color: #333;
@@ -96,68 +7,77 @@
 }
 
 .menu-header {
-  background-color: black;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 0;
 }
 
 .menu-header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
-.menu-header h2 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #ff6347;
+.menu-container {
+  display: flex;
 }
 
-.menu-section {
+.menu-nav {
+  flex: 1;
   background-color: #444;
-  margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 60px;
 }
 
-.menu-section h3 {
-  margin-top: 0;
-  font-size: 2em;
-  background-color: #ff6347;
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 8px;
-}
-
-.menu-section img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 10px 0;
-}
-
-.menu-section ul {
+.menu-nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.menu-section li {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
+.menu-nav li {
+  margin-bottom: 10px;
+  text-align: left;
+  background: #2a2a2a;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.menu-item-name {
+.menu-nav li:hover {
+  background: #252525;
+}
+.menu-nav button {
+  background-color: transparent;
+  border: none;
+  color: white;
   font-size: 1.2em;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
 }
 
-.menu-item-price {
-  font-size: 1.2em;
-}
-
-footer {
-  margin-top: 20px;
-  padding: 10px 0;
-  background-color: #ff6347;
+.menu-nav button:hover {
   border-radius: 8px;
-} */
+
+  text-align: left;
+}
+
+.menu-content {
+  flex: 3;
+  padding: 60px 20px;
+}
+
+@media screen and (max-width:768px) {
+  .menu-container {
+    display: block;
+}
+.menu-content{
+  margin-top: 20px;
+  padding: 80px 0px 0px;
+}
+.menu-nav{
+  margin-top: 20px;
+}
+}

@@ -5,7 +5,7 @@ import './WelcomeSection.css';
 const WelcomeSection = () => {
   return (
     <section className="welcome-section">
-      <h2 className="welcome-title">Welcome to Cafe and Brew</h2>
+      <h2 className="welcome-title">Welcome to Book and Brew</h2>
       <p className="welcome-text">Your cozy spot for the best coffee and delightful meals.</p>
     </section>
   );

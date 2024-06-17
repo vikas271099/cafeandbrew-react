@@ -1,7 +1,7 @@
 .header {
   background-color: #252525;
   color: white;
-  padding: 10px;
+  padding: 15px 20px;
   text-align: center;
   position: sticky;
   display: flex;
@@ -12,7 +12,7 @@
 
 .header-title {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: "Arial, sans-serif";
 }
 
@@ -48,7 +48,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  position: absolute;
+  /* position: absolute; */
   top: 17px;
   right: 20px;
 }

@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1 className="header-title">Cafe and Brew</h1>
+      <h1 className="header-title">Book and Brew</h1>
       <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <ul className="nav-links">
           <li><a href="#home" onClick={closeMobileMenu}>Home</a></li>
