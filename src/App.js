@@ -28,7 +28,7 @@ function App() {
         <div style={{ padding: '50px', textAlign: 'center', backgroundColor: '#f5f5f5' }}>
           <h2>Contact Us</h2>
           <p>Sua Road, Azaad Publications, Gidderbaha</p>
-          <p>Email: info@cafeandbrew.com</p>
+          <p>Email: info@booksandbrew.com</p>
           <p>Phone: +91 (769) 688-5570</p>
         </div>
       </section>
