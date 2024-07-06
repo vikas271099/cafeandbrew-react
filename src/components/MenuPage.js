@@ -29,7 +29,8 @@ const MenuPage = () => {
   }
 
   return (
-    <div className="menu-page" >
+    <div className="menu-page-bg" >
+      <div className="menu-page" >
       <header className="menu-header">
         <h1>Food Menu</h1>
       </header>
@@ -37,7 +38,7 @@ const MenuPage = () => {
         <nav className="menu-nav" >
           <ul>
             {menuCategories.map((category) => (
-              <li key={category.key}>
+              <li key={category.key} className={category.key == selectedCategory ? 'menu-nav-selected' : ''}>
                 <button onClick={() => updateCategory(category)}>
                   {category.value}
                 </button>
@@ -48,7 +49,8 @@ const MenuPage = () => {
         <div className="menu-content" ref={ref}>
           <MenuItems categoryKey={selectedCategory} selectedCategoryValue={selectedCategoryValue}/>
         </div>
-      </div>
+        </div>
+        </div>
     </div>
   );
 };

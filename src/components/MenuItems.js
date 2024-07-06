@@ -1,16 +1,20 @@
 import React from 'react';
 import './MenuItems.css';
 
+const sandwichImage = require('../../src/images/Sandwichbg.jpg');
 const MenuItems = ({ categoryKey, selectedCategoryValue }) => {
   const menuItems = {
-    featured_items: [
-      { name: 'Special Burger', price: '$15' },
-      { name: 'Signature Pizza', price: '$18' },
-      { name: 'Special Burger', price: '$15' },
-      { name: 'Signature Pizza', price: '$18' },
-      { name: 'Special Burger', price: '$15' },
-      { name: 'Signature Pizza', price: '$18' },
-    ],
+    featured_items: {
+      items:[
+      { name: '', FullPrice: 'Regular' , HalfPrice: '' },
+      { name: 'Veg Burger', FullPrice: '59/-' , HalfPrice: '' },
+      { name: 'Double Veg Burger', FullPrice: '69/-' , HalfPrice: '' },
+      { name: 'Cream Burger', FullPrice: '75/-' , HalfPrice: '' },
+      { name: 'Cheese Burger', FullPrice: '79/-' , HalfPrice: '' },
+      { name: 'Double Cheese Burger', FullPrice: '89/-' , HalfPrice: '' },
+      ],
+      BGImage: sandwichImage,
+    },
     starters: [
       { name: 'Garlic Bread', price: '$5' },
       { name: 'Bruschetta', price: '$7' },
@@ -100,8 +104,17 @@ const MenuItems = ({ categoryKey, selectedCategoryValue }) => {
       { name: 'Ice Cream Sundae', price: '$6' },
     ]
   };
-  const items = menuItems[categoryKey];
 
+  const ImagesArrauy = {
+    sandwiches: sandwichImage,
+    sandwiches: sandwichImage,
+    sandwiches: sandwichImage,
+    sandwiches: sandwichImage,
+    sandwiches: sandwichImage,
+    sandwiches: sandwichImage,
+  }
+  const items = menuItems[categoryKey].items;
+  const src = menuItems[categoryKey].BGImage;
 
 
   if (!items) {
@@ -109,17 +122,23 @@ const MenuItems = ({ categoryKey, selectedCategoryValue }) => {
   }
 
   return (
-    <div className="menu-items">
-      <h3>{selectedCategoryValue.replace(/_/g, ' ')}</h3>
+
+    <div style={{ backgroundImage: `url(${src})`, backgroundSize:"cover" }}>
+    <div className="menu-items" >
+        <h3>{selectedCategoryValue.replace(/_/g, ' ')}</h3>
       <ul>
         {items.map((item, index) => (
           <li key={index}>
-            <span className="item-name">{item.name}</span>
-            <span className="item-price">{item.price}</span>
+            <span className="item-name" >{item.name}</span>
+            <div className='item-price-gap'>
+              <span className={index == 0 ? "item-price-index0" : "item-price"}>{item.HalfPrice}</span>
+            <span className={index == 0 ? "item-price-index0" : "item-price"}>{item.FullPrice}</span>
+              </div>
           </li>
         ))}
       </ul>
-    </div>
+      </div>
+      </div>
   );
 };
 

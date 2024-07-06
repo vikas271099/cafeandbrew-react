@@ -1,13 +1,17 @@
 .menu-page {
   font-family: Arial, sans-serif;
   color: white;
-  background-color: #333;
+  background-color: #333333de;
   padding: 20px;
   text-align: center;
 }
+.menu-page-bg{
+  
+  background-image: url(../images/Appetizer.jpg);
+}
 
 .menu-header {
-    background-color: #252525;
+    background-color: #fff4d1;
     padding: 16px;
     border-radius: 8px;
     margin-bottom: 0;
@@ -16,6 +20,7 @@
 .menu-header h1 {
   margin: 0;
   font-size: 2em;
+  color: #753707;
 }
 
 .menu-container {
@@ -24,7 +29,7 @@
 
 .menu-nav {
   flex: 1;
-  background-color: #444;
+  background-color: #241709;
   padding: 20px;
   border-radius: 8px;
   margin-top: 60px;
@@ -39,21 +44,32 @@
 .menu-nav li {
   margin-bottom: 10px;
   text-align: left;
-  background: #2a2a2a;
+  background: #fff4d1;
   border-radius: 5px;
-  padding: 10px;
+  
 }
-
+.menu-nav-selected {
+  background: #4c3721  !important;
+}
+.menu-nav-selected button{
+  font-size: 1.3em !important;
+  font-weight: 600;
+  color: #fff4d1 !important;
+}
 .menu-nav li:hover {
-  background: #252525;
+  background: #4c3721;
+  color: #fff4d1;
+}
+.menu-nav button:hover{
+  color: #fff4d1;
 }
 .menu-nav button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #241709;
   font-size: 1.2em;
   cursor: pointer;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   text-align: left;
 }

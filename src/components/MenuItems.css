@@ -1,14 +1,18 @@
 .menu-items {
-  background-color: #444;
+background: #241709bf;
   /* margin: 20px 0; */
   padding: 20px;
   border-radius: 8px;
+}
+.item-price-gap{
+  gap: 2em;
+  display: flex;
 }
 
 .menu-items h3 {
   margin-top: 0;
   font-size: 2em;
-  background-color: #342b2a;
+  background-color:#3c2e2169;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 8px;
@@ -32,5 +36,29 @@
 }
 
 .item-price {
+
   font-size: 1.2em;
+  width: 6em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-price-index0{
+  font-size: 0.8em;
+  width: 9em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+  .item-price{
+    width: unset;
+  }
+  .item-price-index0{
+    font-size: 0.8em;
+    width: unset;
+  }
 }
