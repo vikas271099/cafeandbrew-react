@@ -18,14 +18,14 @@ function App() {
       </section>
       <section id="about">
         {/* Add About Us content here */}
-        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: '#fff' }}>
+        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: "rgb(255 244 209)" }}>
           <h2>About Us</h2>
           <p>We are a cozy cafe serving the best coffee and delightful meals in town.</p>
         </div>
       </section>
       <section id="contact">
         {/* Add Contact Us content here */}
-        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: '#f5f5f5' }}>
+        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: "rgb(255 244 209)"}}>
           <h2>Contact Us</h2>
           <p>Sua Road, Azaad Publications, Gidderbaha</p>
           <p>Email: info@booksandbrew.com</p>
