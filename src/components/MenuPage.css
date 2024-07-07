@@ -97,10 +97,11 @@
 }
 .menu-content{
   margin-top: 0px;
-  padding: 40px 0px 0px;
+  padding: 10px 0px 0px;
 }
 .menu-nav{
   margin-top: 20px;
+  display: none;
 }
 .isMobileView{
   display: block;

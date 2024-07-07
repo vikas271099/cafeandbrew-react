@@ -163,7 +163,7 @@ const MenuItems = ({ categoryKey, selectedCategoryValue }) => {
       <div className='isMobileView'>
       {Object.keys(menuItems)?.map((x) => {
         return(
-          <div key={x} style={{ backgroundImage: `url(${menuItems[x].BGImage})`, backgroundSize: "cover" }}>
+          <div key={x} style={{marginTop:'25px', backgroundImage: `url(${menuItems[x].BGImage})`, backgroundSize: "cover" }}>
             <div className="menu-items" id={x}>
         <h3>{menuItems[x].value?.replace(/_/g, ' ')}</h3>
       <ul>
