@@ -84,16 +84,28 @@
   flex: 3;
   padding: 60px 20px;
 }
+.isDesktopView{
+  display: block;
+}
+.isMobileView{
+  display: none;
+}
 
 @media screen and (max-width:768px) {
   .menu-container {
     display: block;
 }
 .menu-content{
-  margin-top: 20px;
-  padding: 80px 0px 0px;
+  margin-top: 0px;
+  padding: 40px 0px 0px;
 }
 .menu-nav{
   margin-top: 20px;
+}
+.isMobileView{
+  display: block;
+}
+.isDesktopView{
+  display: none;
 }
 }

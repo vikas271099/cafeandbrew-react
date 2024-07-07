@@ -53,12 +53,28 @@ background: #241709bf;
   justify-content: center;
 }
 
+.isMobileView{
+  display: none;
+}
+.isDesktopView{
+  display: block;
+}
+
 @media screen and (max-width:768px) {
+  .isMobileView{
+    display: block;
+  }
+  .isDesktopView{
+    display: none;
+  }
   .item-price{
     width: unset;
   }
   .item-price-index0{
     font-size: 0.8em;
     width: unset;
+  }
+  .menu-items ul{
+    margin-top: 0;
   }
 }

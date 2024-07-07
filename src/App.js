@@ -5,6 +5,7 @@ import WelcomeSection from './components/WelcomeSection';
 import FeaturedMenu from './components/FeaturedMenu';
 import Footer from './components/Footer';
 import MenuPage from './components/MenuPage';
+import ContactUs from './components/Contact-us';
 
 function App() {
   return (
@@ -24,13 +25,7 @@ function App() {
         </div>
       </section>
       <section id="contact">
-        {/* Add Contact Us content here */}
-        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: "rgb(255 244 209)"}}>
-          <h2>Contact Us</h2>
-          <p>Sua Road, Azaad Publications, Gidderbaha</p>
-          <p>Email: info@booksandbrew.com</p>
-          <p>Phone: +91 (769) 688-5570</p>
-        </div>
+          <ContactUs/>
       </section>
       <Footer />
     </div>
