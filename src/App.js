@@ -19,7 +19,7 @@ function App() {
       </section>
       <section id="about">
         {/* Add About Us content here */}
-        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: "rgb(255 244 209)" }}>
+        <div style={{ padding: '50px', textAlign: 'center', backgroundColor: "#fffcf1" }}>
           <h2>About Us</h2>
           <p>We are a cozy cafe serving the best coffee and delightful meals in town.</p>
         </div>
