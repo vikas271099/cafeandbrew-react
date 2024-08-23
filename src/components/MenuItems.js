@@ -171,8 +171,8 @@ const MenuItems = ({ categoryKey, selectedCategoryValue }) => {
           <li key={index}>
             <span className="item-name" >{item.name}</span>
             <div className='item-price-gap'>
-              <span className={index == 0 ? "item-price-index0" : "item-price"}>{item.HalfPrice}</span>
-            <span className={index == 0 ? "item-price-index0" : "item-price"}>{item.FullPrice}</span>
+              <span className={index === 0 ? "item-price-index0" : "item-price"}>{item.HalfPrice}</span>
+            <span className={index === 0 ? "item-price-index0" : "item-price"}>{item.FullPrice}</span>
               </div>
           </li>
         ))}
@@ -192,8 +192,8 @@ const MenuItems = ({ categoryKey, selectedCategoryValue }) => {
                 <li key={index}>
                   <span className="item-name" >{item.name}</span>
                   <div className='item-price-gap'>
-                    <span className={index == 0 ? "item-price-index0" : "item-price"}>{item.HalfPrice}</span>
-                  <span className={index == 0 ? "item-price-index0" : "item-price"}>{item.FullPrice}</span>
+                    <span className={index === 0 ? "item-price-index0" : "item-price"}>{item.HalfPrice}</span>
+                  <span className={index === 0 ? "item-price-index0" : "item-price"}>{item.FullPrice}</span>
                     </div>
                   </li>
                   )

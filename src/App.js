@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import WelcomeSection from './components/WelcomeSection';
-import FeaturedMenu from './components/FeaturedMenu';
 import Footer from './components/Footer';
 import MenuPage from './components/MenuPage';
 import ContactUs from './components/Contact-us';

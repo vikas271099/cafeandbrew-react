@@ -66,8 +66,8 @@ function ContactUs() {
           <button type="submit">Submit</button>
         </form>
         <p>
-          By contacting us, you agree to our <a href="#">Terms of service</a> and{' '}
-          <a href="#">Privacy Policy</a>
+          By contacting us, you agree to our <a href="https://www.google.com">Terms of service</a> and{' '}
+          <a href="https://www.google.com">Privacy Policy</a>
         </p>
       </div>
     </div>

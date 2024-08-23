@@ -38,7 +38,7 @@ const MenuPage = () => {
         <nav className="menu-nav" >
           <ul>
             {menuCategories.map((category) => (
-              <li key={category.key} className={category.key == selectedCategory ? 'menu-nav-selected' : ''}>
+              <li key={category.key} className={category.key === selectedCategory ? 'menu-nav-selected' : ''}>
                 <button onClick={() => updateCategory(category)}>
                   {category.value}
                 </button>
