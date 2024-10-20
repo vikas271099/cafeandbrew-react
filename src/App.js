@@ -5,6 +5,7 @@ import WelcomeSection from './components/WelcomeSection';
 import Footer from './components/Footer';
 import MenuPage from './components/MenuPage';
 import ContactUs from './components/Contact-us';
+import MenuCombo from './components/MenuCombos';
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
       <section id="menu">
       <MenuPage/>
       </section>
-      <section id="about">
-        {/* Add About Us content here */}
+      <section id='combo'>
+        <MenuCombo/>
+      </section>
+      {/* <section id="about">
         <div style={{ padding: '50px', textAlign: 'center', backgroundColor: "#fffcf1" }}>
           <h2>About Us</h2>
           <p>We are a cozy cafe serving the best coffee and delightful meals in town.</p>
@@ -25,7 +28,7 @@ function App() {
       </section>
       <section id="contact">
           <ContactUs/>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );
