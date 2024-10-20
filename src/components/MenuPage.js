@@ -3,18 +3,21 @@ import MenuItems from './MenuItems';
 import './MenuPage.css';
 
 const menuCategories = [
-  { key: 'featured_items', value: 'Featured Items' },
-  { key: 'starters', value: 'Starters' },
-  { key: 'wings', value: 'Wings' },
-  { key: 'salads_soups', value: 'Salads & Soups' },
-  { key: 'lunch_specials', value: 'Lunch Specials' },
-  { key: 'burgers', value: 'Burgers' },
-  { key: 'bbq_platters_ribs', value: 'BBQ Platters & Ribs' },
-  { key: 'fire_grilled_favorites', value: 'Fire-Grilled Favorites' },
-  { key: 'sandwiches', value: 'Sandwiches' },
-  { key: 'sides', value: 'Sides' },
-  { key: 'kids_meal', value: 'Kid’s Meal' },
-  { key: 'desserts', value: 'Desserts' }
+  { key: 'friesandsides', value: "FRIES	&	SIDE'S" },
+  { key: 'burgers', value: 'BURGERS' },
+  { key: 'sandwiches', value: 'SANDWICHES' },
+  { key: 'pastas', value: 'PASTAS' },
+  { key: 'sub', value: 'SUB' },
+  { key: 'salad', value: 'SALAD' },
+  { key: 'maggie', value: 'MAGGIE' },
+  { key: 'wraps', value: 'WRAPS' },
+  { key: 'chinese', value: 'CHINESE' },
+  { key: 'soup', value: 'SOUP' },
+  { key: 'pizza', value: 'PIZZAS' },
+  { key: 'teacoffee', value: 'TEE/COFFEE' },
+  { key: 'shakes', value: 'SHAKES' },
+  { key: 'mocktails', value: 'MOCKTAILS' },
+  { key: 'colddrink', value: 'COLD DRINKS' }
 ];
 
 const MenuPage = () => {
