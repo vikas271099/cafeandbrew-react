@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MenuItems from './MenuItems';
 import './MenuPage.css';
 
+
 const menuCategories = [
   { key: 'friesandsides', value: "FRIES	&	SIDE'S" },
   { key: 'burgers', value: 'BURGERS' },
@@ -19,6 +20,8 @@ const menuCategories = [
   { key: 'mocktails', value: 'MOCKTAILS' },
   { key: 'colddrink', value: 'COLD DRINKS' }
 ];
+
+
 
 const MenuPage = () => {
   const ref = React.useRef();
@@ -52,6 +55,9 @@ const MenuPage = () => {
         <div className="menu-content" ref={ref}>
           <MenuItems categoryKey={selectedCategory} selectedCategoryValue={selectedCategoryValue}/>
         </div>
+
+        
+        
         </div>
         </div>
     </div>

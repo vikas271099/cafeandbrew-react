@@ -19,8 +19,8 @@ const Header = () => {
         <ul className="nav-links">
           <li><a href="#home" onClick={closeMobileMenu}>Home</a></li>
           <li><a href="#menu" onClick={closeMobileMenu}>Menu</a></li>
-          <li><a href="#about" onClick={closeMobileMenu}>About Us</a></li>
-          <li><a href="#contact" onClick={closeMobileMenu}>Contact Us</a></li>
+          <li><a href="#combo" onClick={closeMobileMenu}>Combo</a></li>
+          {/* <li><a href="#contact" onClick={closeMobileMenu}>Contact Us</a></li> */}
         </ul>
       </nav>
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>

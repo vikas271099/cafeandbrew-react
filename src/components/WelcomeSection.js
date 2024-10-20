@@ -1,12 +1,15 @@
 // src/components/WelcomeSection.js
 import React from 'react';
 import './WelcomeSection.css';
-
+const logo = require("../images/logo.png")
 const WelcomeSection = () => {
   return (
     <section className="welcome-section">
-      <h2 className="welcome-title">Welcome to Books and Brew</h2>
-      <p className="welcome-text">Your cozy spot for the best coffee and delightful meals.</p>
+      <div className='logoSection'>
+      <img src={logo} />
+      </div>
+      <h2 className="welcome-title">Books and Brew</h2>
+      <p className="welcome-text">Eat, Read, Relax, Repeat</p>
     </section>
   );
 };

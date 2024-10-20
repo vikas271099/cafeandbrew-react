@@ -13,12 +13,17 @@
   .welcome-title {
     font-size: 2em;
     color: #fff;
+    margin: 0;
   }
   
   .welcome-text {
     font-size: 1.2em;
     color: #fff;
     margin-top: 10px;
+    font-family: math;
+  }
+  .logoSection img{
+    width: 200px;
   }
   
   @media all and (max-width:768px){

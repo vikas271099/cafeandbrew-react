@@ -29,6 +29,7 @@ background: #241709bf;
   justify-content: space-between;
   padding: 10px 0;
   color: white;
+  text-align: left;
 }
 
 .item-name {
@@ -60,7 +61,23 @@ background: #241709bf;
   display: block;
 }
 
+.comboimage {
+  margin-bottom: 1em;
+}
+.comboimage img{
+  width: 100%;
+}
+.combocontainer{
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
 @media screen and (max-width:768px) {
+  .combocontainer {
+    display: flex;
+    flex-direction: column;
+}
   .isMobileView{
     display: block;
   }
